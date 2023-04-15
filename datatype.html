@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datatype</title>
+</head>
+<body>
+    
+<h1>Two Types of Datatype</h1>
+<h2>Premetive</h2>
+    <h3>Number</h3>
+    <h3>null</h3>
+    <h3>BigInt</h3>
+    <h3>boolean</h3>
+    <h3>string</h3>
+    <h3>Symbol</h3>
+    <h3>undefined</h3>
+<h2>Nonpremetive</h2>
+    <h3>Arrey</h3>
+    <h3>object</h3>
+
+<script>
+
+// Premetive Data Type
+
+    let a = 12  //number
+    let b = null
+    let c = BigInt(15) + BigInt(15)
+    let d = true //boolean
+    let e = "name" //string
+    let f = Symbol()
+    let g = undefined
+
+    console.log(typeof a + a);
+    console.log(typeof b + b);
+    console.log(typeof c + c);
+    console.log(typeof d + d);
+    console.log(typeof e + e);
+    console.log(typeof f);
+    console.log(typeof g + g);
+
+// NonPremetive Data Type
+
+    const z={
+        "sagar":30,
+        "vyom":null,
+        "rahul":true,
+        "sunday":BigInt(5)+BigInt(22),
+        "sun": undefined
+    }
+    console.log(typeof z);
+    console.log(z);
+    console.log(z.sagar);
+    console.log(z.vyom);
+    console.log(z.rahul);
+    console.log(z.sunday);
+    console.log(z.sun);
+
+    const z_1 = [31,5,2022,"vyom","string",undefined,true,null]
+    console.log(typeof z_1);
+    console.log(z_1);
+    console.log(z_1.length);
+    console.log(z_1[0]);
+    console.log(z_1[1]);
+    console.log(z_1[2]);
+    console.log(z_1[3]);
+    console.log(z_1[4]);
+    console.log(z_1[5]);
+    console.log(z_1[6]);
+    console.log(z_1[7]);
+
+</script>
+
+</body>
+</html>
