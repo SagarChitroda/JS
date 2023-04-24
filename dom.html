@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    
+    <section class="sec_one">
+        <div class="conteiner">
+            <div>
+                <h1 class="one" ID="zero">This is Test Mail</h1>
+                <p class="per" name="sunday" ID="pre1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam magnam voluptates, tempore dicta saepe. Nulla vel ab ad vero perferendis sapiente deserunt, hic architecto sequi nemo, exercitationem, illo nobis.</p>
+                <p class="per" name="monday" ID="pre2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam magnam voluptates, tempore dicta saepe. Nulla vel ab ad vero perferendis sapiente deserunt, hic architecto sequi nemo, exercitationem, illo nobis.</p>
+                <p class="per" name="tuesday" ID="pre3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quam magnam voluptates, tempore dicta saepe. Nulla vel ab ad vero perferendis sapiente deserunt, hic architecto sequi nemo, exercitationem, illo nobis.</p>
+            </div> 
+        </div>
+    </section>
+    <script>
+
+        //singal element selector (2 types)
+
+        let element = document.getElementById("zero").innerText = "This is show in console"
+
+        // let element = document.getElementById("zero").innerHTML = "<i>This is Test Mail</i>"
+        // element.style.color = "red" // it's only for knowlage
+        console.log(element);
+
+        let element_1 = document.querySelector("#pre1")
+        console.log(element_1);
+
+        let element_2 = document.querySelector(".per") // only one class return 
+        console.log(element_2);
+
+        //multiple element selector (4 Types)
+
+        let element_3 = document.getElementsByClassName("per")
+        console.log(element_3);
+
+        let element_4 = document.getElementsByTagName("p") // you can write only element name like h1, p, div, etc.....
+        console.log(element_4);
+
+        let element_5 = document.getElementsByName("monday")
+        console.log(element_5);
+
+        let element_6 = document.querySelectorAll(".per")
+        console.log(element_6);
+
+    </script>
+
+</body>
+</html>
