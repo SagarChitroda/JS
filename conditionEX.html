@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConditionEX</title>
+</head>
+<body>
+    
+<h1>ConditionEX (else if condition)</h1>
+
+<script>
+
+    let addmition = prompt("Put in your Marks")
+    addmition = Number.parseInt(addmition)
+
+    if (addmition <= 34) {
+        console.log("Better luck next time");  // if you need output show in console use this
+        document.write("Better luck next time")
+    } 
+
+    else if (addmition >=35 && addmition <= 50){
+        console.log("May be you will be selected for division C");
+        document.write("May be you will be selected for division C")
+    }
+    else if (addmition >=51 && addmition <= 80){
+        console.log("May be you will be selected for division B");
+        document.write("May be you will be selected for division B")
+    }
+    else if (addmition >=81 && addmition <= 100){
+        console.log("May be you will be selected for division A");
+        document.write("May be you will be selected for division A")
+    }
+    else {
+        alert("Please put your proper marks")
+    }
+
+</script>
+
+
+</body>
+</html>
