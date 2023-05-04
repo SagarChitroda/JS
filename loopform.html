@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop Form</title>
+</head>
+<body>
+    
+    <form action="#" onsubmit="sub()">
+        <div>
+            <label for="your-name"> Your Name </label>
+            <input type="text" id="your_name"  >
+            <p id="p1"></p>
+        </div>
+        <div>
+            <label for="your-mail"> Your Mail</label>
+            <input type="email" id="your-mail">
+            <p id="p2"></p>
+        </div>
+        <div>
+            <label for="password"> password </label>
+            <input type="password" id="password">
+            <p id="p3"></p>
+        </div>
+        <div>
+            <label for="confirmpassword"> Confirm Password </label>
+            <input type="password" id="confirmpassword">
+            <p id="p4"></p>
+        </div>
+        <div>
+            <button type="submit">submit</button>
+        </div>
+    </form>
+
+    <script>
+
+        let yname = document.getElementById("your_name")
+        let yemail = document.getElementById("your-mail")
+        let ypassword = document.getElementById("password")
+        let yconfirmpassword = document.getElementById("confirmpassword")
+        let pera1 = document.getElementById("p1")
+        let pera2 = document.getElementById("p2")
+        let pera3 = document.getElementById("p3")
+        let pera4 = document.getElementById("p4")
+
+        function sub() {
+            let validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            
+            if(yemail.value == ""){
+                pera2.innerHTML=""
+            }
+            else {
+                    pera2.innerHTML="enter valid email ID"
+                }
+            if(ypassword.value  < 8){
+                pera3.innerHTML="enter atlist 8 char"
+                event.preventDefault()
+            }
+                if (ypassword.value.search(/[a-z]/) == -1){
+                    pera3.innerHTML=""
+                    event.preventDefault()
+                } 
+                else {
+                    pera3.innerHTML="enter atlist A-Z char"
+                }
+                if (ypassword.value.search(/[A-Z]/) == -1) {
+                    
+                } else {
+                    pera3.innerHTML="enter atlist a-z char"
+                }
+        }  
+</script>
+
+</body>
+</html>
